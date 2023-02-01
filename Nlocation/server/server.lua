@@ -14,7 +14,7 @@ AddEventHandler('Nlocation:Louer', function(Vehicule, Price)
         
         TriggerClientEvent('Nlocation:spawnCar', _src, Vehicule)
         Citizen.Wait(1500)
-		TriggerClientEvent('esx:showAdvancedNotification', _src, 'Location', 'Payement', "Vous avez payer ~r~"..Price.." ~s~pour ~r~une location ~s~!", 'CHAR_BANK_MAZE', 1)
+		TriggerClientEvent('esx:showAdvancedNotification', _src, 'Location', 'Payement', "Vous avez payer ~r~"..Price.."$s~pour ~r~une location ~s~!", 'CHAR_BANK_MAZE', 1)
 
     else 
         Citizen.Wait(500)
